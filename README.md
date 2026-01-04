@@ -22,6 +22,7 @@ pip install -r requirements.txt
 
 
 **预训练**
+因为此项目核心为预训练项目，所以这里专门写了一个脚本来运行预训练代码，详情请参考项目文件中的do_pretrain.sh文件
 ```bash 
 CUDA_VISIBLE_DEVICES=0,1,2,3 bash do_pretrain.sh
 ```
