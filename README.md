@@ -2,11 +2,11 @@
 the project of medical ai
 
 ### Pre-training
-You can download our 16k mpMRI pre-training data on your own or download from our [huggingface repo](https://huggingface.co/datasets/shaohao011/BrainMVP-16k).
+You can download 16k mpMRI pre-training data on your own or download from the [huggingface repo](https://huggingface.co/datasets/shaohao011/BrainMVP-16k) of the original projiect.
 ### Downstream
 Dataset available at <a href='https://huggingface.co/datasets/shaohao011/BrainMVP-ds/tree/main'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue'></a>
 
-All downstream datasets are open-source. If you encounter any difficulties downloading them, please feel free to email ruishaohao@sjtu.edu.cn to request access.
+All downstream datasets are open-source.
 ## Get Started
 
 **Installation**
