@@ -36,4 +36,3 @@ bash do_train.sh
 # test
 bash do_test.sh
 ```
-
