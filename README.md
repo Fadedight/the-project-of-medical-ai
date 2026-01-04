@@ -1,33 +1,33 @@
-# the-project-of-medical-ai
+# 医学人工智能项目《多模态视觉预训练用于医学图像分析》
 the project of medical ai
 
 ### Pre-training
-You can download 16k mpMRI pre-training data on your own or download from the [huggingface repo](https://huggingface.co/datasets/shaohao011/BrainMVP-16k) of the original projiect.
+你可以自行下载1.6万mpMRI预训练数据，或是从原项目的 [huggingface repo](https://huggingface.co/datasets/shaohao011/BrainMVP-16k) 中下载。
 ### Downstream
-Dataset available at <a href='https://huggingface.co/datasets/shaohao011/BrainMVP-ds/tree/main'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue'></a>
+数据集可在原项目的huggingface中访问 <a href='https://huggingface.co/datasets/shaohao011/BrainMVP-ds/tree/main'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue'></a>
 
-All downstream datasets are open-source.
-## Get Started
+所有下游数据集都是开源的。
+## 环境配置
 
-**Installation**
+**安装**
 ```bash
 conda create -n brainmvp python=3.9
 conda activate brainmvp
 pip install -r requirements.txt
 ```
 
-**Download Model**
+**下载模型**
 
-We prepare two varients of our pre-trained models [Uniformer (recommend)](https://drive.google.com/file/d/1DTmz5WACESD0wfkZ2r0x-zjTwOgd9ov3/view?usp=drive_link) and [Unet](https://drive.google.com/file/d/16DvqjYBfenNEdggLu2fXuMJ6FjxBxQsS/view?usp=drive_link).
+我们准备了两种预训练模型 [Uniformer (recommend)](https://drive.google.com/file/d/1DTmz5WACESD0wfkZ2r0x-zjTwOgd9ov3/view?usp=drive_link)和 [Unet](https://drive.google.com/file/d/16DvqjYBfenNEdggLu2fXuMJ6FjxBxQsS/view?usp=drive_link).
 
 
-**Pre-train**
+**预训练**
 ```bash 
 CUDA_VISIBLE_DEVICES=0,1,2,3 bash do_pretrain.sh
 ```
-**Finetune**
+**微调**
 
-We provide example code for fine-tuning on the BraTS-PED dataset, which you can modify to suit your own task.
+提供了 BraTS-PED 数据集的微调示例代码，您可以根据自己的任务进行修改。
 ```bash 
 # train
 cd Downstream
